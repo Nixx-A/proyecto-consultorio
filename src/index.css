@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.a {
+  background-color: rgb(168, 162, 158);
+  background-image: radial-gradient(at 88% 13%, rgb(243, 232, 255) 0, transparent 24%), radial-gradient(at 91% 50%, rgb(24, 24, 27) 0, transparent 87%), radial-gradient(at 40% 37%, rgb(71, 85, 105) 0, transparent 50%), radial-gradient(at 45% 9%, rgb(161, 161, 170) 0, transparent 75%), radial-gradient(at 70% 82%, rgb(156, 163, 175) 0, transparent 19%), radial-gradient(at 58% 23%, rgb(124, 58, 237) 0, transparent 50%);
+
+}
+
+.patients-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
+}
+
+.child-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 10000;
+}
+
+dialog::backdrop {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
