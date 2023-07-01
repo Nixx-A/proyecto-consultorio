@@ -28,10 +28,9 @@ export function Patients () {
         <div className=' bg-[aliceblue] rounded w-[97%] h-[95%] overflow-hidden'>
           <p
             onClick={() => logout()}
-            className='m-1 w-32 absolute left-0 md:left-6 font-semibold cursor-pointer hover:text-gray-400 duration-100'>
+            className='m-1 w-32 absolute left-0 md:left-7 font-semibold cursor-pointer hover:text-gray-400 duration-100'>
             Cerrar sesion
           </p>
-          <p className='absolute right-6'>{user.email}</p>
           <h1 className='text-3xl text-center mb-16'>Pacientes</h1>
           <div className='flex justify-center items-start flex-col gap-1'>
             <div className='flex justify-center item flex-col'>
