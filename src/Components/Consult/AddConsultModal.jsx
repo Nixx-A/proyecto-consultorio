@@ -1,5 +1,5 @@
 import { MdCancel } from 'react-icons/md'
-import Modal from './Modal'
+import Modal from '../Modal'
 
 export function AddConsultModal ({ consultOpen, setConsultOpen, handleSubmit }) {
   return (

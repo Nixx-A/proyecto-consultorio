@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../Context/authContext'
 import { useEffect, useState } from 'react'
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
-import { Alert } from '../Components/Alert'
+import { Alert } from '../Components/auth/Alert'
 
 /* eslint-disable react/no-unescaped-entities */
 export function Login () {

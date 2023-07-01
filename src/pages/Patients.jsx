@@ -3,7 +3,7 @@ import { useAuth } from '../Context/authContext'
 import { AiFillCloseCircle, AiOutlinePlus } from 'react-icons/ai'
 import { saveUser } from '../firebase'
 import { DnaSpinner, RingSpinner } from '../Components/Spinner'
-import { ListOfPatients } from '../Components/ListOfPatients'
+import { ListOfPatients } from '../Components/Patient/ListOfPatients'
 import { useDialog } from '../hooks/useDialog'
 import { usePatients } from '../hooks/usePatient'
 
@@ -45,7 +45,7 @@ export function Patients () {
           </div>
           <div className='w-[98%] m-auto bg-gray-200 h-full overflow-y-scroll pb-32'>
             {loadingGetPatient && <RingSpinner />}
-            <ul className='patients-grid'>
+            <ul className=''>
               {patientsList ? (
                 <ListOfPatients patients={patientsList} />
               ) : (

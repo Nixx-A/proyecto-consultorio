@@ -9,14 +9,12 @@ export default function Consult ({ listOfConsults, onDeleteConsult }) {
     setEditingConsult(consult)
     setOpenEditModal(true)
   }
-
-  const caca = () => console.log(editingConsult)
   return (
     <>
-      <div className='flex justify-between mx-4 py-1'>
+      {/* <div className='flex justify-between mx-4 py-1'>
         <p>Consultas</p>
         <p>Fechas</p>
-      </div>
+      </div> */}
       {listOfConsults.map(consult => {
         return (
           <li
@@ -27,14 +25,13 @@ export default function Consult ({ listOfConsults, onDeleteConsult }) {
               onClick={() => handleEdit(consult)}>
               {consult.consultName}
             </p>
-            <button onClick={caca}>asd</button>
             <div className='flex gap-2'>
+              <p>{consult.date}</p>
               <button
                 onClick={() => onDeleteConsult(consult.id)}
                 className='delete-button'>
                 <MdDelete className='h-5 w-5' />
               </button>{' '}
-              <p>{consult.date}</p>
             </div>
           </li>
         )

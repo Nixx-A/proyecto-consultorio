@@ -1,4 +1,4 @@
-import Modal from './Modal'
+import Modal from '../Modal'
 
 const DeleteModal = ({ isOpen, onClose, handleDelete }) => {
   return (

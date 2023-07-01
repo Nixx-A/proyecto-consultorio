@@ -1,14 +1,14 @@
 import { AiOutlinePlus } from 'react-icons/ai'
 import { Link, useParams } from 'react-router-dom'
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
-import Consult from '../Components/Consult'
+import Consult from '../Components/Consult/Consult'
 import { useState } from 'react'
 import { useAuth } from '../Context/authContext'
 import { savePatientConsult } from '../firebase'
 import { useDeleteConsult } from '../hooks/useDeleteConsult'
 import { useGetPatientConsults } from '../hooks/useGetPatientConsults'
 import { RingSpinner } from '../Components/Spinner'
-import { AddConsultModal } from '../Components/AddConsultModal'
+import { AddConsultModal } from '../Components/Consult/AddConsultModal'
 
 export function PatientHistory () {
   const { id } = useParams()

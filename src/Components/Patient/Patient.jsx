@@ -1,8 +1,8 @@
 /* eslint-disable multiline-ternary */
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import { deletePatient, updatePatient } from '../firebase'
-import { useAuth } from '../Context/authContext'
+import { deletePatient, updatePatient } from '../../firebase'
+import { useAuth } from '../../Context/authContext'
 import { useState } from 'react'
 import EditModal from './EditModal'
 import DeleteModal from './DeleteModal'

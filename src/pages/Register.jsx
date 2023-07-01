@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../Context/authContext'
-import { Alert } from '../Components/Alert'
+import { Alert } from '../Components/auth/Alert'
 
 export function Register () {
   const { signup } = useAuth()

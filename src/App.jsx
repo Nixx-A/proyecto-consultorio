@@ -4,8 +4,8 @@ import { Login } from './pages/Login'
 import { Register } from './pages/Register'
 import { Patients } from './pages/Patients'
 import { AuthProvider } from './Context/authContext'
-import ProtectedRoute from './Components/ProtectedRoute'
 import { PatientHistory } from './pages/PatientHistory'
+import ProtectedRoute from './Components/auth/ProtectedRoute'
 function App () {
   return (
     <main className='h-screen w-screen a'>
