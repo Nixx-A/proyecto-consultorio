@@ -8,10 +8,10 @@ export function Home () {
   const navigate = useNavigate()
 
   if (loading) return <DnaSpinner />
+
   if (user?.accessToken) {
     navigate('patients')
-  } else {
-    null
+    return null
   }
 
   // console.log(user)
@@ -19,7 +19,7 @@ export function Home () {
     <>
       <section className='flex h-5/6 justify-center items-center'>
         <div className='flex flex-col items-center bg-white px-7 py-10 rounded shadow-md'>
-          <img className='w-32 h-32' src='/cuidado-dental.png' alt='' />
+          <img className='w-32 h-32' src='/cuidado-dental.png' alt='dentist-icon-home' />
 
           <div className='flex gap-2 mt-6'>
             <Link

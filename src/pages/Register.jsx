@@ -59,7 +59,7 @@ export function Register () {
           </div>
 
           <div className="flex items-center justify-between">
-            <button className={btnDisabled ? 'bg-gray-300 text-white cursor-not-allowed px-2 py-1 rounded-md text-sm md:text-base ' : 'rounded-md bg-blue-500 hover:bg-blue-700 duration-200 focus:outline-none text-white focus:shadow-outline px-2 py-1 text-sm md:text-base '} disabled={btnDisabled}>Registrarse</button>
+            <button name='register-btn' className={btnDisabled ? 'bg-gray-300 text-white cursor-not-allowed px-2 py-1 rounded-md text-sm md:text-base ' : 'rounded-md bg-blue-500 hover:bg-blue-700 duration-200 focus:outline-none text-white focus:shadow-outline px-2 py-1 text-sm md:text-base '} disabled={btnDisabled}>Registrarse</button>
 
           </div>
         </form>

@@ -76,7 +76,7 @@ export function Login () {
           </div>
 
           <div className="flex items-center justify-between">
-            <button className={btnDisabled ? 'bg-gray-300 text-white cursor-not-allowed px-2 py-1 rounded-md text-sm md:text-base ' : 'rounded-md bg-blue-500 hover:bg-blue-700 duration-200 focus:outline-none text-white focus:shadow-outline px-2 py-1 text-sm md:text-base '} disabled={btnDisabled}>Iniciar sesion</button>
+            <button name='login-btn' className={btnDisabled ? 'bg-gray-300 text-white cursor-not-allowed px-2 py-1 rounded-md text-sm md:text-base ' : 'rounded-md bg-blue-500 hover:bg-blue-700 duration-200 focus:outline-none text-white focus:shadow-outline px-2 py-1 text-sm md:text-base '} disabled={btnDisabled}>Iniciar sesion</button>
             <a className="inline-block align-baseline font-bold text-xs lg:text-sm text-blue-500 hover:text-blue-800 duration-100" href="#" onClick={handleResetPassword}>Olvidaste tu contraseña?</a>
           </div>
         </form>

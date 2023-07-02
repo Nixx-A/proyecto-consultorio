@@ -40,10 +40,12 @@ export function Patient ({ name, id }) {
       </Link>
       <div className='flex items-center gap-1'>
         <AiFillEdit
+        name='edit-icon'
           onClick={openEditModal}
           className='cursor-pointer hover:text-gray-500 duration-100'
         />
         <AiFillDelete
+        name='delete-icon'
           onClick={setDeleteModalOpen}
           className='cursor-pointer hover:text-gray-500 duration-100'
         />

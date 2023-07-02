@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
 import { Register } from './pages/Register'
@@ -6,6 +6,7 @@ import { Patients } from './pages/Patients'
 import { AuthProvider } from './Context/authContext'
 import { PatientHistory } from './pages/PatientHistory'
 import ProtectedRoute from './Components/auth/ProtectedRoute'
+
 function App () {
   return (
     <main className='h-screen w-screen a'>

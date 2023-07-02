@@ -71,7 +71,7 @@ export function Patients () {
                 className='border border-black p-1 rounded'
                 name='query'
                 type='text'
-                placeholder='Juan Castro'
+                placeholder='Vanesa'
               />
             </form>
           </div>
