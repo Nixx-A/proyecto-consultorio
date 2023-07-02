@@ -1,5 +1,6 @@
 import { MdCancel } from 'react-icons/md'
 import Modal from '../Modal'
+import Teeth from './Teeth'
 
 export function AddConsultModal ({ consultOpen, setConsultOpen, handleSubmit }) {
   return (
@@ -79,7 +80,7 @@ export function AddConsultModal ({ consultOpen, setConsultOpen, handleSubmit }) 
           />
         </div>
 
-        <div className='w-48 h-48 bg-gray-400'></div>
+        <Teeth setFormData={null}/>
 
         <div className='flex flex-col items-center'>
           <label htmlFor='observations'>Observaciones</label>

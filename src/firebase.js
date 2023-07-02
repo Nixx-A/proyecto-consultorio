@@ -35,7 +35,7 @@ export const saveUser = async (email, fullName) => {
   const userRef = doc(db, 'users', email)
   const patientId = doc(collection(userRef, 'patients')).id
   const patientRef = doc(userRef, 'patients', patientId)
-  await setDoc(patientRef, { fullName, consults: [] })
+  await setDoc(patientRef, { fullName })
 }
 
 // Update patient

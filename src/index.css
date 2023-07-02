@@ -52,3 +52,25 @@
 dialog::backdrop {
   background-color: hsla(0, 0%, 0%, 0.5);
 }
+
+.tooth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.tooth-selected {
+  background-color: blue;
+}
+
+.inside {
+  position: absolute;
+  border: 3px solid black;
+  width: 18px;
+  height: 18px;
+}
+

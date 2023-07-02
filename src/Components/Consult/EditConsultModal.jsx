@@ -4,6 +4,7 @@ import Modal from '../Modal'
 import { useParams } from 'react-router-dom'
 import { useAuth } from '../../Context/authContext'
 import { updateConsult } from '../../firebase'
+import Teeth from './Teeth'
 
 export default function EditConsultModal ({ openEditModal, setOpenEditModal, editingConsult }) {
   const { id } = useParams()
@@ -119,8 +120,8 @@ export default function EditConsultModal ({ openEditModal, setOpenEditModal, edi
             className='border-2 mb-2 border-black disabled:bg-gray-400 '
             type='number'
             name='temporary'
-            disabled={isViewMode}
             onChange={handleChange}
+            disabled={isViewMode}
             value={formData?.temporary || ''}
           />
 
@@ -136,7 +137,7 @@ export default function EditConsultModal ({ openEditModal, setOpenEditModal, edi
           />
         </div>
 
-        <div className='w-48 h-48 bg-gray-400'></div>
+        <Teeth setFormData={setFormData} />
 
         <div className='flex flex-col items-center'>
           <label htmlFor='observations'>Observaciones</label>
@@ -147,7 +148,7 @@ export default function EditConsultModal ({ openEditModal, setOpenEditModal, edi
             onChange={handleChange}
             value={formData?.observations || ''}
             cols='20'
-            rows='4'></textarea>
+            rows='4' />
         </div>
 
         <div className='flex justify-between mt-6 '>
